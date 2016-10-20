@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#d8e5f3"
+    tools:context="com.example.joshua.fragmentlab.loginFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:text="User Login"
+        android:layout_height="49dp"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        />
+    <TextView
+        android:text="Username:"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:textSize="16dp"
+        android:background="#e0e0e0"
+        android:id="@+id/USER"
+        android:maxLength="140"
+        android:textColor="#000"
+        />
+    <TextView
+        android:text="Password:"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:textSize="16dp"
+        android:background="#e0e0e0"
+        android:id="@+id/PASSWORD"
+        android:hint="********"
+        android:textColor="#000"
+
+        android:layout_gravity="bottom"
+        android:inputType="textPassword"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:background="#cac9d9"
+
+        android:hint=""
+        android:text="Login"
+        android:onClick="sendMessage"/>
+
+
+</LinearLayout>
